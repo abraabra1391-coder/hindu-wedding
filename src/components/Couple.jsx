@@ -48,9 +48,6 @@ export default function Couple() {
             <p className="font-serif italic text-amber-900 font-normal text-sm sm:text-base">
               Daughter of Sreekumar & Sreedevi
             </p>
-            <p className="font-body text-[11px] sm:text-xs text-[#5E4348] max-w-xs mx-auto leading-relaxed pt-1 font-normal">
-              "Graceful, compassionate, and filled with warmth. Ashwathi brings light and joy to every life she touches."
-            </p>
           </div>
         </motion.div>
 
@@ -84,9 +81,6 @@ export default function Couple() {
             </h3>
             <p className="font-serif italic text-amber-900 font-normal text-sm sm:text-base">
               Son of Vishwanadan & Radhika
-            </p>
-            <p className="font-body text-[11px] sm:text-xs text-[#5E4348] max-w-xs mx-auto leading-relaxed pt-1 font-normal">
-              "Ambitious, kind-hearted, and steadfast. Anand embodies strength and devotion for the new journey ahead."
             </p>
           </div>
         </motion.div>
