@@ -43,8 +43,8 @@ html, body {
 body {
   background-color: var(--color-ivory);
   background-image: 
-    radial-gradient(circle at 50% 0%, rgba(197, 160, 89, 0.06) 0%, transparent 60%),
-    radial-gradient(circle at 100% 100%, rgba(248, 187, 208, 0.06) 0%, transparent 50%);
+    radial-gradient(circle at 50% 0%, rgba(197, 160, 89, 0.05) 0%, transparent 60%),
+    radial-gradient(circle at 100% 100%, rgba(248, 187, 208, 0.05) 0%, transparent 50%);
 }
 
 #root {
@@ -76,7 +76,7 @@ section {
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 ::-webkit-scrollbar-track {
   background: var(--color-ivory);
@@ -86,7 +86,7 @@ section {
   border-radius: 4px;
 }
 
-/* Minimal Pure Serif Gold Typography */
+/* Minimal Mobile Typography */
 .text-gold-gradient {
   color: #9B7B38;
 }
@@ -113,42 +113,58 @@ section {
   font-family: var(--font-devanagari);
 }
 
-/* Minimal Luxury Arch Card */
+/* Mobile-Friendly Arch Card */
 .indian-arch-card {
   position: relative;
   background: var(--color-cream);
   border: 1px solid rgba(197, 160, 89, 0.3);
   box-shadow: 
-    0 10px 30px rgba(59, 35, 40, 0.04),
-    0 0 15px rgba(212, 175, 55, 0.05);
-  border-radius: 120px 120px 24px 24px;
+    0 8px 25px rgba(59, 35, 40, 0.04),
+    0 0 12px rgba(212, 175, 55, 0.05);
+  border-radius: 60px 60px 20px 20px;
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  max-width: 780px;
+  max-width: 680px;
+}
+
+@media (min-width: 640px) {
+  .indian-arch-card {
+    border-radius: 110px 110px 24px 24px;
+  }
 }
 
 .indian-arch-card::before {
   content: '';
   position: absolute;
-  top: 8px;
-  left: 8px;
-  right: 8px;
-  bottom: 8px;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
   border: 1px solid rgba(197, 160, 89, 0.2);
-  border-radius: 114px 114px 18px 18px;
+  border-radius: 54px 54px 14px 14px;
   pointer-events: none;
+}
+
+@media (min-width: 640px) {
+  .indian-arch-card::before {
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    border-radius: 104px 104px 18px 18px;
+  }
 }
 
 /* Diya Glow Animation */
 @keyframes diyaGlow {
   0%, 100% {
-    filter: drop-shadow(0 0 6px rgba(255, 180, 50, 0.5));
+    filter: drop-shadow(0 0 5px rgba(255, 180, 50, 0.4));
     transform: scale(1);
   }
   50% {
-    filter: drop-shadow(0 0 12px rgba(255, 200, 80, 0.7));
+    filter: drop-shadow(0 0 10px rgba(255, 200, 80, 0.6));
     transform: scale(1.02);
   }
 }
@@ -163,7 +179,7 @@ section {
     transform: translateY(0px) rotate(0deg);
   }
   50% {
-    transform: translateY(-8px) rotate(2deg);
+    transform: translateY(-6px) rotate(2deg);
   }
   100% {
     transform: translateY(0px) rotate(0deg);
@@ -174,19 +190,19 @@ section {
   animation: floatSlow 6s ease-in-out infinite;
 }
 
-/* Elegant Minimal Button */
+/* Mobile Gold Button */
 .btn-gold-royal {
   background: #B8860B;
   color: #FFFFFF;
   font-family: var(--font-serif);
-  letter-spacing: 0.15em;
+  letter-spacing: 0.12em;
   border: none;
   border-radius: 50px;
-  padding: 12px 32px;
-  font-size: 0.85rem;
+  padding: 10px 26px;
+  font-size: 0.78rem;
   font-weight: 500;
   cursor: pointer;
-  box-shadow: 0 4px 15px rgba(184, 134, 11, 0.25);
+  box-shadow: 0 4px 12px rgba(184, 134, 11, 0.2);
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -195,16 +211,15 @@ section {
 .btn-gold-royal:hover {
   background: #9B7B38;
   transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(184, 134, 11, 0.35);
 }
 
-/* Traditional Divider Line */
+/* Mobile Traditional Divider Line */
 .gold-divider {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
-  margin: 18px auto;
+  gap: 12px;
+  margin: 14px auto;
   width: 100%;
 }
 
@@ -212,8 +227,8 @@ section {
 .gold-divider::after {
   content: '';
   height: 1px;
-  width: 50px;
-  background: linear-gradient(90deg, transparent, rgba(197, 160, 89, 0.4), transparent);
+  width: 40px;
+  background: linear-gradient(90deg, transparent, rgba(197, 160, 89, 0.35), transparent);
 }
 
 /* Mandala Subtle Background Rotation */
