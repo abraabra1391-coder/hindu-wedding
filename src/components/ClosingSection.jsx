@@ -69,10 +69,7 @@ export default function ClosingSection() {
             </button>
           </div>
 
-          {/* Date & Location Footer */}
-          <div className="pt-12 text-xs sm:text-sm text-amber-800/70 font-body uppercase tracking-[0.25em] font-normal">
-            December 12, 2026 • Kowdiar Palace • Thiruvananthapuram
-          </div>
+
         </motion.div>
       </div>
     </section>
