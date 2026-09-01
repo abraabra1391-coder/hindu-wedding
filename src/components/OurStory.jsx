@@ -16,20 +16,6 @@ export default function OurStory() {
       date: 'Spring 2022',
       description: 'Long conversations, shared cups of traditional chai, and discovering endless common dreams deepened our friendship into a profound bond.',
       icon: '☕'
-    },
-    {
-      title: 'The Proposal',
-      subtitle: 'Under Starry Skies',
-      date: 'Winter 2025',
-      description: 'Surrounded by glowing candlelights and floating lotuses, Anand asked Ashwathi to spend a lifetime together. With joy and tears, she said Yes!',
-      icon: '💍'
-    },
-    {
-      title: 'Forever Begins',
-      subtitle: 'Sacred Wedded Bliss',
-      date: 'December 12, 2026',
-      description: 'We step hand in hand into the sacred ritual of Kalyana Muhurtham, seeking your blessings as two hearts become one.',
-      icon: '🪔'
     }
   ];
 
