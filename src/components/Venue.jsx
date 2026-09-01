@@ -1,10 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Navigation, PhoneCall, Compass } from 'lucide-react';
+import { Compass } from 'lucide-react';
 
 export default function Venue() {
-  const mapDirectionsUrl = "https://www.google.com/maps/dir/?api=1&destination=Kowdiar+Palace+Thiruvananthapuram";
-
   return (
     <section id="venue-section" className="pt-36 pb-24 px-4 max-w-5xl mx-auto text-center mt-12">
       <div className="text-center mb-14 mx-auto">
@@ -26,11 +24,11 @@ export default function Venue() {
         transition={{ duration: 0.8 }}
         className="rounded-[32px] p-8 md:p-12 bg-white/90 border border-amber-300/40 shadow-xl relative overflow-hidden flex flex-col items-center text-center max-w-3xl mx-auto space-y-8"
       >
-        {/* Decorative Palace Arch Silhouette background */}
+        {/* Decorative background */}
         <div className="absolute inset-0 bg-radial from-amber-100/30 to-transparent pointer-events-none" />
 
-        {/* Venue Info Centered */}
-        <div className="relative z-10 space-y-6 flex flex-col items-center text-center w-full">
+        {/* Venue Info */}
+        <div className="relative z-10 space-y-4 flex flex-col items-center text-center w-full">
           <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-amber-100/60 border border-amber-300/50 text-amber-900 text-[11px] font-medium tracking-wider font-body">
             <Compass className="w-3.5 h-3.5 text-amber-700" />
             <span>PRIMARY CELEBRATION PALACE</span>
@@ -39,39 +37,9 @@ export default function Venue() {
           <h3 className="font-serif text-2xl sm:text-3xl text-amber-950 font-medium leading-relaxed max-w-xl mx-auto">
             The Kowdiar Royal Convention Centre & Palace Grounds
           </h3>
-
-          <div className="space-y-4 font-body text-amber-900/90 text-sm flex flex-col items-center">
-            <div className="flex flex-col items-center text-center gap-1">
-              <div className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-amber-700" />
-                <p className="text-amber-900/80 leading-relaxed max-w-md font-body text-xs sm:text-sm font-normal">
-                  Palace Road, Kowdiar, Thiruvananthapuram, Kerala 695003, India
-                </p>
-              </div>
-            </div>
-
-            <div className="flex flex-col items-center text-center gap-1 pt-2">
-              <div className="flex items-center gap-2">
-                <PhoneCall className="w-3.5 h-3.5 text-amber-700" />
-                <p className="font-normal text-amber-950 text-sm font-body">+91 98470 12345 / +91 94471 67890</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="pt-3">
-            <a
-              href={mapDirectionsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-gold-royal inline-flex items-center justify-center gap-2.5"
-            >
-              <Navigation className="w-3.5 h-3.5" />
-              <span>GET DIRECTIONS</span>
-            </a>
-          </div>
         </div>
 
-        {/* Interactive Map Preview Card Centered */}
+        {/* Interactive Map */}
         <div className="relative z-10 w-full h-72 rounded-2xl border border-amber-300/60 overflow-hidden shadow-sm group max-w-2xl mx-auto">
           <iframe
             title="Venue Location Map"
