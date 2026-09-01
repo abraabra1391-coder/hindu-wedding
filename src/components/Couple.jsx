@@ -5,9 +5,6 @@ export default function Couple() {
   return (
     <section id="couple-section" className="py-12 sm:py-16 px-3 sm:px-4 w-full max-w-5xl mx-auto flex flex-col items-center justify-center text-center">
       <div className="text-center mb-10 sm:mb-14 mx-auto w-full">
-        <span className="text-[10px] sm:text-xs uppercase tracking-[0.25em] text-amber-800 font-body font-medium block mb-1">
-          The Blessed Union
-        </span>
         <h2 className="font-serif text-xl sm:text-3xl text-amber-900 font-normal uppercase tracking-widest">
           Bride & Groom
         </h2>
