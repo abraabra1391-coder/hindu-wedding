@@ -6,9 +6,6 @@ export default function Venue() {
   return (
     <section id="venue-section" className="pt-36 pb-24 px-4 max-w-5xl mx-auto text-center mt-12">
       <div className="text-center mb-14 mx-auto">
-        <span className="text-xs uppercase tracking-[0.3em] text-amber-800 font-body font-medium block mb-2">
-          Royal Location
-        </span>
         <h2 className="font-serif text-3xl sm:text-4xl text-amber-900 font-normal uppercase tracking-widest">
           The Wedding Venue
         </h2>
