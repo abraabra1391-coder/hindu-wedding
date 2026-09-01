@@ -44,19 +44,17 @@ export default function Venue() {
             <div className="flex flex-col items-center text-center gap-1">
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-amber-700" />
-                <p className="font-medium text-amber-950 text-base font-serif">Address</p>
+                <p className="text-amber-900/80 leading-relaxed max-w-md font-body text-xs sm:text-sm font-normal">
+                  Palace Road, Kowdiar, Thiruvananthapuram, Kerala 695003, India
+                </p>
               </div>
-              <p className="text-amber-900/80 leading-relaxed max-w-md font-body text-xs sm:text-sm font-normal">
-                Palace Road, Kowdiar, Thiruvananthapuram, Kerala 695003, India
-              </p>
             </div>
 
             <div className="flex flex-col items-center text-center gap-1 pt-2">
               <div className="flex items-center gap-2">
                 <PhoneCall className="w-3.5 h-3.5 text-amber-700" />
-                <p className="text-[11px] font-medium uppercase tracking-wider text-amber-800">Guest Hospitality Helpline</p>
+                <p className="font-normal text-amber-950 text-sm font-body">+91 98470 12345 / +91 94471 67890</p>
               </div>
-              <p className="font-normal text-amber-950 text-sm font-body">+91 98470 12345 / +91 94471 67890</p>
             </div>
           </div>
 
