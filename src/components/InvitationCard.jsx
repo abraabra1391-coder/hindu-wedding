@@ -42,22 +42,12 @@ export default function InvitationCard() {
             <span className="font-serif text-2xl sm:text-4xl md:text-5xl text-amber-900 font-medium tracking-wide block mb-2 lowercase">
               ashwathi & anand
             </span>
-            <span className="text-[10px] sm:text-xs font-normal tracking-[0.2em] text-amber-800 uppercase font-body block mt-2">
-              Kalyana Muhurtham & Celebration
-            </span>
           </div>
 
-          <p className="text-xs sm:text-sm text-[#4E3237] font-serif leading-relaxed max-w-md mx-auto mb-4">
-            Your presence, warm prayers, and blessings on this auspicious day will illuminate their new journey together.
-          </p>
+
         </div>
 
-        {/* Bottom Corner Ornaments */}
-        <div className="mt-8 flex items-center justify-between w-full max-w-md mx-auto px-2 border-t border-amber-300/30 pt-4">
-          <div className="w-8 h-8 border-l border-b border-amber-500/30 rounded-bl-lg" />
-          <span className="font-script text-xl sm:text-2xl text-amber-800 font-normal">Subham Astu</span>
-          <div className="w-8 h-8 border-r border-b border-amber-500/30 rounded-br-lg" />
-        </div>
+
       </motion.div>
     </section>
   );
